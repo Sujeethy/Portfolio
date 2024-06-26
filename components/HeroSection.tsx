@@ -2,7 +2,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import { Link } from "react-scroll/modules";
+import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 import { Typewriter } from "react-simple-typewriter";
 import useRandom from '../hooks/useRandom';
@@ -26,10 +26,10 @@ const HeroSection = () => {
         </div>
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           <h1 className="text-5xl font-bold leading-tight">
-            Hi, I'm Sujeeth!
+            Hi, I&apos;m Sujeeth!
           </h1>
           <p className="text-xl mt-4 leading-relaxed">
-            I'm a{" "}
+            I&apos;m a{" "}
             <span className="font-semibold text-teal-600">
               <Typewriter
                 words={["Software Engineer", "Tech Enthusiast", "Lifelong Learner"]}

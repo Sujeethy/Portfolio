@@ -14,12 +14,12 @@ const skills = [
   { skill: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500" /> },
   { skill: "Git", icon: <FaGitAlt className="text-red-600" /> },
   { skill: "GitHub", icon: <FaGithub className="text-gray-500" /> },
-  { skill: "Jupyter Notebooks", icon: <SiJupyter className="text-orange-400" /> },
+  { skill: "Jupyter Notebooks", icon: <SiJupyter className="text-orange-400" /> }
 ];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="  py-20">
+    <section id="about" className="py-20">
       <div className="container mx-auto">
         <h1 className="text-center text-5xl font-bold">
           About Me
@@ -52,7 +52,7 @@ const AboutSection = () => {
             <p className="text-lg">
               I believe that you should{" "}
               <span className="font-bold text-teal-600">never stop growing</span>{" "}
-              and that's what I strive to do. I have a passion for
+              and that&apos;s what I strive to do. I have a passion for
               technology and a desire to always push the limits of what is
               possible. I am excited to see where my career takes me and am
               always open to new opportunities. 😊
@@ -64,7 +64,7 @@ const AboutSection = () => {
               {skills.map((item, idx) => (
                 <span
                   key={idx}
-                  className="bg-gray-800  px-4 py-2 m-2 rounded-full font-semibold flex items-center space-x-2 transform transition-transform duration-300 hover:scale-110"
+                  className="bg-gray-800 px-4 py-2 m-2 rounded-full font-semibold flex items-center space-x-2 transform transition-transform duration-300 hover:scale-110"
                 >
                   {item.icon}
                   <span>{item.skill}</span>

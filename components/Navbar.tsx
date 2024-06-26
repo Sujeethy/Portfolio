@@ -1,16 +1,16 @@
-"use client";
+// Navbar.tsx
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import NextLink from "next/link"; // Import NextLink from next/link
 
 const NAV_ITEMS = [
   { label: "Home", page: "home" },
   { label: "About", page: "about" },
-  { label: "Experience", page: "experience" },
+  { label: "Work", page: "experience" },
   { label: "Projects", page: "projects" },
-  
 ];
 
 const Navbar = () => {
@@ -25,24 +25,17 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <Link
-          to="home"
-          className="text-2xl font-bold cursor-pointer"
-          smooth={true}
-          duration={500}
-        >
-          Sujeeth
-        </Link>
+        <NextLink href="#home" passHref> {/* Use NextLink for internal navigation */}
+          <a className="text-2xl font-bold cursor-pointer">
+            Sujeeth
+          </a>
+        </NextLink>
         <div className="md:hidden">
           <button onClick={() => setNavbar(!navbar)}>
             {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
           </button>
         </div>
-        <nav
-          className={`md:flex items-center space-x-6 ${
-            navbar ? "block" : "hidden"
-          } md:block`}
-        >
+        <nav className={`md:flex items-center space-x-6 ${navbar ? "block" : "hidden"} md:block`}>
           {NAV_ITEMS.map((item, idx) => (
             <Link
               key={idx}
@@ -57,17 +50,8 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-          <button
-            onClick={() =>
-              setTheme(currentTheme === "dark" ? "light" : "dark")
-            }
-            className="p-2 rounded-xl"
-          >
-            {currentTheme === "dark" ? (
-              <RiSunLine size={25} color="white" />
-            ) : (
-              <RiMoonFill size={25} color="black" />
-            )}
+          <button onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")} className="p-2 rounded-xl">
+            {currentTheme === "dark" ? <RiSunLine size={25} color="white" /> : <RiMoonFill size={25} color="black" />}
           </button>
         </nav>
       </div>
