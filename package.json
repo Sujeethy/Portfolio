@@ -1,13 +1,15 @@
 {
-  "name": "temp",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 4000",
+    "deploy": "next build && next export && gh-pages -d out",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "homepage": "https://sujeethy.github.io/Portfolio/",
   "dependencies": {
     "@next/font": "13.1.6",
     "@types/node": "18.11.18",
@@ -28,6 +30,7 @@
   "devDependencies": {
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   }
