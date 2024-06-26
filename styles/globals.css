@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  perspective: 1000px;
+}
+
+/* Add this to your global CSS file */
+/* Add this to your global CSS file */
+.experience-card {
+  opacity: 0;
+  transform: translateX(200%);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.experience-card.slide-left {
+  transform: translateX(-200%);
+}
+
+.experience-card.animate-slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Add this to your global CSS file */
+#experience {
+  overflow-x: hidden;
+}
