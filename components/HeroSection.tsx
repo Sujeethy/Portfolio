@@ -49,7 +49,6 @@ const HeroSection = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
           >
             Projects
