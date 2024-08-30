@@ -52,7 +52,7 @@ const ProjectsSection = () => {
                     width={500}
                     height={500}
                     layout="responsive" 
-                    className="rounded-lg shadow-lg hover:opacity-75 transition-opacity"
+                    className="rounded-lg shadow-lg hover:opacity-75 transition-opacity !static"
                   />
                 </Link>
               </div>
