@@ -41,7 +41,7 @@ const HeroSection = () => {
                 delaySpeed={1000}
               />
             </span>{" "}
-            based in India. Working towards creating software that makes life easier and more meaningful.
+            based in India. <br></br>Working towards creating software that makes life easier and more meaningful.
           </p>
           <Link
             to="projects"

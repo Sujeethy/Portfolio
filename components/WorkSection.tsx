@@ -62,7 +62,7 @@ const ExperienceSection = () => {
         <div className="relative mt-12">
           <div className="border-l-4 border-teal-600 absolute h-full left-1/2 transform -translate-x-1/2 flex flex-col justify-center">
             <div className="bg-teal-600 w-4 h-4 rounded-full mt-2"></div>
-            {/* You can add more design elements to the line here */}
+
           </div>
           <div className="space-y-12">
             {experiences.map((experience, idx) => (

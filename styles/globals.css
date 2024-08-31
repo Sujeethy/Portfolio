@@ -27,3 +27,11 @@
 #experience {
   overflow-x: hidden;
 }
+
+#ChatApp{
+   
+    position: static !important;
+    left: 0 !important;
+  
+  
+}
