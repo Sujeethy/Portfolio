@@ -1,20 +1,24 @@
 // AboutSection.tsx
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaReact, FaGithub, FaGitAlt } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiJupyter } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaReact, FaGithub, FaGitAlt,FaNodeJs } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiJupyter,SiRedux } from "react-icons/si";
 
 const skills = [
   { skill: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
   { skill: "CSS", icon: <FaCss3Alt className="text-blue-600" /> },
   { skill: "JavaScript", icon: <FaJsSquare className="text-yellow-400" /> },
+  {skill:"Node", icon: <FaNodeJs className="text-teal-500" /> },
+  { skill: "React", icon: <FaReact className="text-blue-400" /> },
+  { skill: "Redux", icon: <SiRedux className="text-teal-500" /> },
+  
   { skill: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
   { skill: "Python", icon: <FaPython className="text-yellow-500" /> },
-  { skill: "React", icon: <FaReact className="text-blue-400" /> },
-  { skill: "Next.js", icon: <SiNextdotjs className="text-gray-800" /> },
+  
+  { skill: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { skill: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500" /> },
   { skill: "Git", icon: <FaGitAlt className="text-red-600" /> },
   { skill: "GitHub", icon: <FaGithub className="text-gray-500" /> },
-  { skill: "Jupyter Notebooks", icon: <SiJupyter className="text-orange-400" /> }
+  
 ];
 
 const AboutSection = () => {
